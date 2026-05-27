@@ -1,6 +1,99 @@
 # PMBOK8 Skill Installer
 
-Install the PMBOK8 Document Generator skill for Claude Code or Codex.
+Install the PMBOK8 Document Generator skill for Claude Code and Codex with one `npx` command.
+
+This package installs a reusable AI skill that helps turn an existing product flow, working app behavior, repository, UI screens, API behavior, data model, configuration, tests, or business notes into professional PMBOK8-aligned requirement and project planning documents.
+
+The skill treats the current codebase or product behavior as **live requirements**: a behavioral reference used to accelerate product discovery and create documentation for a future real implementation. It is not intended to write documents that describe the current codebase as a POC, prototype, or production system.
+
+## What The Skill Does
+
+The PMBOK8 Document Generator acts as a PMBOK 8th edition specialist, senior product manager, project manager, and business analyst.
+
+It can:
+
+- infer user journeys, product flows, business rules, roles, inputs, outputs, edge cases, and constraints from visible application behavior
+- convert live requirements into future-state product and project documentation
+- create requirement artifacts for sponsor review, PM planning, QA preparation, and engineering handoff
+- separate documents that are useful now from templates that should be used later
+- ask for missing project details, such as the intended production technology stack, when estimates or implementation planning depend on it
+- keep final documents free from POC, prototype, repository-analysis, or code-generation framing unless explicitly requested
+
+## What Can Be Generated
+
+The skill can generate staged documentation packages instead of overwhelming stakeholders with every possible document at once.
+
+### Current Requirements And Planning
+
+Useful early documents that can often be produced from live requirements:
+
+- Requirements Documentation Index
+- Product Requirements Document
+- User Stories and Acceptance Criteria
+- Specification by Example / BDD Scenarios
+- Requirements Traceability Matrix
+- Scope Statement
+- Project Charter
+- Stakeholder Register
+- Risk Register
+- Assumptions and Open Questions Log
+
+### Delivery Definition And Handoff
+
+Useful when preparing implementation, QA, or engineering handoff:
+
+- Requirements Management Plan
+- API Requirements and Integration Contract
+- Data Requirements and Data Dictionary
+- Non-Functional Requirements
+- QA Preparation Plan
+- Engineering Handoff Package
+- Delivery Roadmap
+- Milestone Schedule
+- Work Breakdown Structure
+
+### Governance And Control
+
+Useful when the project moves toward approval, formal planning, or execution:
+
+- Project Management Plan
+- Governance Plan
+- Communications Plan
+- Change Control Plan
+- Issue Log
+- Decision Log
+- Benefits Realization Plan
+- Procurement or Vendor Plan, if relevant
+
+### Future-Phase Templates
+
+Templates that can be prepared with known project context and completed later:
+
+- Change Request
+- Status Report
+- Release Readiness Checklist
+- Lessons Learned Report
+- Project Closeout Report
+- Benefits Realization Report
+- Procurement Documents
+
+## Example Prompts
+
+```text
+Use pmbok8-document-generator to create a requirements documentation package from this application.
+```
+
+```text
+Use pmbok8-document-generator to infer user stories, acceptance criteria, BDD scenarios, and an API requirements contract from this codebase.
+```
+
+```text
+Use pmbok8-document-generator to create a future-state project charter, scope statement, risk register, and delivery roadmap.
+```
+
+```text
+Use pmbok8-document-generator to create only the documents stakeholders need now, and list future-phase templates separately.
+```
 
 ## Install
 
@@ -8,7 +101,7 @@ Install the PMBOK8 Document Generator skill for Claude Code or Codex.
 npx pmbok8-skill-installer
 ```
 
-This installs the skill for every supported agent:
+By default, this installs the skill for every supported agent:
 
 ```text
 ~/.claude/skills/pmbok8-document-generator
@@ -54,3 +147,7 @@ Set `CLAUDE_HOME` or `CODEX_HOME` to install somewhere else:
 CLAUDE_HOME=/path/to/.claude npx pmbok8-skill-installer
 CODEX_HOME=/path/to/.codex npx pmbok8-skill-installer --agent codex
 ```
+
+## Notes
+
+The generated documents are PMBOK8-aligned professional project and requirements artifacts. They are not official PMI documents and do not reproduce PMI copyrighted text.
