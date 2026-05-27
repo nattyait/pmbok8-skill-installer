@@ -1,6 +1,6 @@
 {
   "name": "pmbok8-skill-installer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Install the PMBOK8 Document Generator skill for Claude Code or Codex.",
   "bin": {
     "pmbok8-skill-installer": "./bin/install.js",
