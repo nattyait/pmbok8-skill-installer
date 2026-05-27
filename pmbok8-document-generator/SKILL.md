@@ -1,6 +1,6 @@
 ---
 name: pmbok8-document-generator
-description: Generate professional PMBOK Guide Eighth Edition-aligned project management and requirements documentation packages as a PMBOK8 specialist, senior product manager, project manager, and business analyst. Use live requirements from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, observable product behavior, repositories, requirements, meeting notes, business context, or partially drafted materials to create future-state requirement and planning artifacts. Create staged documentation packages that separate documents needed now from templates or future-phase documents, including charters, plans, registers, reports, PRDs, traceability matrices, user stories, acceptance criteria, BDD scenarios, API requirements, integration contracts, scope, schedule, governance, QA preparation, and engineering handoff artifacts.
+description: Generate professional PMBOK Guide Eighth Edition-aligned project management, requirements, and executive presentation packages as a PMBOK8 specialist, senior product manager, project manager, and business analyst. Use live requirements from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, observable product behavior, repositories, requirements, meeting notes, business context, or partially drafted materials to create future-state requirement and planning artifacts. Create staged documentation packages and client-ready presentation decks that separate documents needed now from templates or future-phase documents, including charters, plans, registers, reports, PRDs, traceability matrices, user stories, acceptance criteria, BDD scenarios, API requirements, integration contracts, scope, schedule, governance, QA preparation, engineering handoff artifacts, executive decks, sponsor review slides, and infographic presentations.
 ---
 
 # PMBOK8 Document Generator
@@ -24,12 +24,27 @@ Create useful project management and requirements documents aligned with PMBOK G
 5. Identify the requested document type and delivery format.
 6. Read `references/document-types.md` for the appropriate structure.
 7. Read `references/package-strategy.md` when creating more than one document, planning a documentation package, or deciding what should be created now versus later.
-8. Read `references/pmbok8-document-rules.md` for quality, tone, PMBOK8 alignment, and final-output rules.
-9. Ask for missing business-critical inputs only if they cannot be inferred safely.
-10. Ask about the intended production technology stack when estimates, implementation planning, API design, architecture assumptions, schedule, or engineering handoff depends on it. If the user has no preference, provide broad estimates and state that they depend on the selected technology.
-11. Convert findings into professional future-state PMBOK8, product, BA, QA, and engineering handoff artifacts without referencing discovery mechanics in the final documents.
-12. If the requested output is `.docx`, `.pdf`, `.xlsx`, or `.pptx`, use the relevant document, PDF, spreadsheet, or presentation tooling to produce the file.
-13. Verify the final artifact when tooling supports rendering or validation.
+8. Read `references/presentation-structures.md` when the user asks for a presentation, deck, slides, executive briefing, sponsor review, client presentation, infographic summary, or `.pptx`.
+9. Read `references/pmbok8-document-rules.md` for quality, tone, PMBOK8 alignment, and final-output rules.
+10. Ask for missing business-critical inputs only if they cannot be inferred safely.
+11. Ask about the intended production technology stack when estimates, implementation planning, API design, architecture assumptions, schedule, or engineering handoff depends on it. If the user has no preference, provide broad estimates and state that they depend on the selected technology.
+12. Convert findings into professional future-state PMBOK8, product, BA, QA, engineering handoff, and executive presentation artifacts without referencing discovery mechanics in the final documents.
+13. If the requested output is `.docx`, `.pdf`, `.xlsx`, or `.pptx`, use the relevant document, PDF, spreadsheet, or presentation tooling to produce the file.
+14. Verify the final artifact when tooling supports rendering or validation.
+
+## Presentation Mode
+
+When the user asks for a presentation, deck, slides, executive briefing, sponsor review, client presentation, infographic summary, or `.pptx`, create a presentation-ready narrative from the PMBOK8 documentation package or live requirements.
+
+Use presentation tooling when available to generate a professional `.pptx`. The deck should be suitable for executives, sponsors, clients, steering committees, and senior stakeholders.
+
+Presentation output should:
+
+- summarize decisions, value, scope, user journeys, risks, timeline, and next steps
+- use infographic-friendly structures such as journey maps, roadmaps, capability maps, matrices, risk heatmaps, timelines, and decision summaries
+- avoid dense paragraph slides and internal discovery mechanics
+- avoid mentioning POC, prototype, repository analysis, source inspection, or code generation unless explicitly requested
+- complement the documentation package rather than duplicate every detail
 
 ## Source Handling
 
@@ -98,3 +113,8 @@ Support documents such as:
 - requirements documentation index
 - QA preparation plan
 - engineering handoff package
+- executive sponsor review deck
+- client requirements presentation
+- future-state application proposal deck
+- MVP scope and roadmap deck
+- steering committee presentation

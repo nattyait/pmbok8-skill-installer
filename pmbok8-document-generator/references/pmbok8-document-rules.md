@@ -89,6 +89,20 @@ When creating multiple documents, do not generate every possible artifact at onc
 - Put future-phase artifacts in a separate folder or section with trigger events such as architecture selection, sprint planning, vendor procurement, formal change control, execution reporting, testing, release readiness, or closeout.
 - Explain briefly why each future document is deferred.
 
+## Presentation Output
+
+When generating presentations:
+
+- create a presentation brief before building slides
+- tailor the deck to executives, sponsors, clients, steering committees, or senior stakeholders
+- focus on business value, target users, future-state solution, MVP scope, roadmap, risks, assumptions, decisions, and next steps
+- prefer infographic structures such as journey maps, roadmaps, matrices, capability maps, risk heatmaps, timelines, and decision summaries
+- avoid dense paragraph slides
+- avoid copying full document sections directly into slides
+- keep technical details at summary level unless the audience is engineering or QA
+- use presentation tooling to generate `.pptx` when available and verify the deck when possible
+- avoid POC, prototype, repository, source-inspection, and code-generation framing unless requested
+
 ## Quality Checklist
 
 Before finalizing, check that the output:
@@ -103,3 +117,4 @@ Before finalizing, check that the output:
 - avoids POC, prototype, repository, and source-inspection framing unless requested
 - separates current-ready documents from future-phase templates when producing a package
 - asks for or clearly states assumptions about the production technology stack when estimates or implementation planning depend on it
+- uses executive-friendly storytelling and infographic structure when the output is a presentation

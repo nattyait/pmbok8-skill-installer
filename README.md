@@ -2,7 +2,7 @@
 
 Install the PMBOK8 Document Generator skill for Claude Code and Codex with one `npx` command.
 
-This package installs a reusable AI skill that helps turn an existing product flow, working app behavior, repository, UI screens, API behavior, data model, configuration, tests, or business notes into professional PMBOK8-aligned requirement and project planning documents.
+This package installs a reusable AI skill that helps turn an existing product flow, working app behavior, repository, UI screens, API behavior, data model, configuration, tests, or business notes into professional PMBOK8-aligned requirement documents, project planning documents, and executive presentation decks.
 
 The skill treats the current codebase or product behavior as **live requirements**: a behavioral reference used to accelerate product discovery and create documentation for a future real implementation. It is not intended to write documents that describe the current codebase as a POC, prototype, or production system.
 
@@ -15,6 +15,7 @@ It can:
 - infer user journeys, product flows, business rules, roles, inputs, outputs, edge cases, and constraints from visible application behavior
 - convert live requirements into future-state product and project documentation
 - create requirement artifacts for sponsor review, PM planning, QA preparation, and engineering handoff
+- create executive, sponsor, client, and steering committee presentation decks from the generated documents or live requirements
 - separate documents that are useful now from templates that should be used later
 - ask for missing project details, such as the intended production technology stack, when estimates or implementation planning depend on it
 - keep final documents free from POC, prototype, repository-analysis, or code-generation framing unless explicitly requested
@@ -77,6 +78,19 @@ Templates that can be prepared with known project context and completed later:
 - Benefits Realization Report
 - Procurement Documents
 
+### Executive And Client Presentations
+
+Presentation outputs for sponsor review, client meetings, steering committees, and executive alignment:
+
+- Executive Sponsor Review Deck
+- Client Requirements Presentation
+- Future-State Application Proposal Deck
+- MVP Scope and Roadmap Deck
+- Engineering and QA Handoff Summary Deck
+- Steering Committee Presentation
+
+The skill is designed to create presentation-ready narratives and can use presentation tooling to generate professional `.pptx` decks when available. Decks should use infographic-friendly layouts such as journey maps, roadmap timelines, capability maps, scope matrices, risk heatmaps, decision summaries, and integration overview diagrams.
+
 ## Example Prompts
 
 ```text
@@ -93,6 +107,14 @@ Use pmbok8-document-generator to create a future-state project charter, scope st
 
 ```text
 Use pmbok8-document-generator to create only the documents stakeholders need now, and list future-phase templates separately.
+```
+
+```text
+Use pmbok8-document-generator to create an executive sponsor review deck from the generated requirements package.
+```
+
+```text
+Use pmbok8-document-generator to create a client-ready infographic presentation for the future-state application proposal.
 ```
 
 ## Install
