@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMBOK8 Document Generator"
+  short_description: "Generate PMBOK8-aligned project management documents."
+  default_prompt: "Create a PMBOK8-aligned project document from the current project context."
