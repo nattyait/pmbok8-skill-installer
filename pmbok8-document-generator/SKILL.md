@@ -1,6 +1,6 @@
 ---
 name: pmbok8-document-generator
-description: Generate professional PMBOK Guide Eighth Edition-aligned project management and requirements documentation packages as a PMBOK8 specialist, senior product manager, project manager, and business analyst. Create charters, plans, registers, reports, requirements management plans, PRDs, traceability matrices, user stories, acceptance criteria, BDD scenarios, API requirements, integration contracts, and documentation indexes from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, observable product behavior, repositories, requirements, meeting notes, business context, or partially drafted project materials.
+description: Generate professional PMBOK Guide Eighth Edition-aligned project management and requirements documentation packages as a PMBOK8 specialist, senior product manager, project manager, and business analyst. Use live requirements from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, observable product behavior, repositories, requirements, meeting notes, business context, or partially drafted materials to create future-state requirement and planning artifacts. Create staged documentation packages that separate documents needed now from templates or future-phase documents, including charters, plans, registers, reports, PRDs, traceability matrices, user stories, acceptance criteria, BDD scenarios, API requirements, integration contracts, scope, schedule, governance, QA preparation, and engineering handoff artifacts.
 ---
 
 # PMBOK8 Document Generator
@@ -9,11 +9,13 @@ description: Generate professional PMBOK Guide Eighth Edition-aligned project ma
 
 Act as a PMBOK 8th edition specialist, senior product manager, project manager, and business analyst.
 
-Create professional documentation packages from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, and observable product behavior. Infer requirements from visible product behavior, UI flows, API behavior, data models, configuration, tests, and available business notes.
+Create professional future-state documentation packages from product flows, user journeys, stakeholder goals, delivery assumptions, constraints, and observable product behavior. Treat the current product behavior or codebase as live requirements: a behavioral reference model used to accelerate product discovery, requirements definition, and implementation planning for the real application that will be built later.
+
+Infer requirements from visible product behavior, UI flows, API behavior, data models, configuration, tests, and available business notes. Convert those findings into PMBOK8-style project artifacts and product/BA artifacts for future implementation.
 
 ## Core Workflow
 
-Create useful project management documents aligned with PMBOK Guide Eighth Edition concepts without reproducing PMI copyrighted text.
+Create useful project management and requirements documents aligned with PMBOK Guide Eighth Edition concepts without reproducing PMI copyrighted text.
 
 1. Identify the product purpose, primary users, and main user journeys.
 2. Inspect application entry points, routes, screens, components, API endpoints, models, schemas, events, configuration, tests, and existing business notes when available.
@@ -21,11 +23,13 @@ Create useful project management documents aligned with PMBOK Guide Eighth Editi
 4. Identify assumptions, open decisions, constraints, risks, MVP boundaries, and non-functional requirements.
 5. Identify the requested document type and delivery format.
 6. Read `references/document-types.md` for the appropriate structure.
-7. Read `references/pmbok8-document-rules.md` for quality, tone, PMBOK8 alignment, and final-output rules.
-8. Ask for missing business-critical inputs only if they cannot be inferred safely.
-9. Convert findings into professional PMBOK8 artifacts without referencing discovery mechanics in the final documents.
-10. If the requested output is `.docx`, `.pdf`, `.xlsx`, or `.pptx`, use the relevant document, PDF, spreadsheet, or presentation tooling to produce the file.
-11. Verify the final artifact when tooling supports rendering or validation.
+7. Read `references/package-strategy.md` when creating more than one document, planning a documentation package, or deciding what should be created now versus later.
+8. Read `references/pmbok8-document-rules.md` for quality, tone, PMBOK8 alignment, and final-output rules.
+9. Ask for missing business-critical inputs only if they cannot be inferred safely.
+10. Ask about the intended production technology stack when estimates, implementation planning, API design, architecture assumptions, schedule, or engineering handoff depends on it. If the user has no preference, provide broad estimates and state that they depend on the selected technology.
+11. Convert findings into professional future-state PMBOK8, product, BA, QA, and engineering handoff artifacts without referencing discovery mechanics in the final documents.
+12. If the requested output is `.docx`, `.pdf`, `.xlsx`, or `.pptx`, use the relevant document, PDF, spreadsheet, or presentation tooling to produce the file.
+13. Verify the final artifact when tooling supports rendering or validation.
 
 ## Source Handling
 
@@ -35,12 +39,15 @@ Separate observed facts from assumptions.
 - For notes or transcripts: extract decisions, owners, risks, dates, dependencies, and unresolved questions.
 - For partial documents: preserve valid user content and improve structure, clarity, and completeness.
 - For ambiguous projects: use placeholders only where facts materially affect scope, budget, schedule, risk, compliance, or approval.
+- Treat the source as live requirements for a future implementation, not as the product deliverable to deploy or reuse.
 
 ## Final Document Framing
 
 Write final documents as if they came from normal requirement gathering, PM planning, stakeholder facilitation, and business analysis.
 
-Do not mention informal working history, code generation, prototype history, repository analysis, source inspection, or how the initial product idea was created. The output must be suitable for sponsor review, PM planning, QA preparation, and engineering handoff.
+Do not mention POC, proof of concept, prototype, informal working history, code generation, repository analysis, source inspection, or how the initial product idea was created unless the user explicitly asks for that framing. The output must be suitable for sponsor review, PM planning, QA preparation, and engineering handoff for the future application.
+
+Use future-state language such as "the target application shall", "the proposed solution should", and "the future implementation will". Avoid language that implies the current codebase is the production solution.
 
 ## PMBOK8 Alignment
 
@@ -64,8 +71,14 @@ Each deliverable should be:
 
 Support documents such as:
 
+- documentation package roadmap
+- current-ready versus future-phase document index
 - project charter
 - project management plan
+- scope statement
+- work breakdown structure
+- delivery roadmap
+- milestone schedule
 - stakeholder register
 - risk register
 - issue log
@@ -83,3 +96,5 @@ Support documents such as:
 - specification by example or BDD scenarios
 - API requirements and integration contract
 - requirements documentation index
+- QA preparation plan
+- engineering handoff package

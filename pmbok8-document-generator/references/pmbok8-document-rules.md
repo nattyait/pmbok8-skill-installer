@@ -26,8 +26,10 @@ Use plain professional language.
 - Avoid academic explanations unless the user asks for training material.
 - Avoid filler sections that do not help the project team act.
 - Write as if the documents came from normal requirement gathering, PM planning, stakeholder facilitation, and business analysis.
-- Do not mention informal working history, code generation, prototype history, repository analysis, source inspection, or how the initial product idea was created.
-- Keep the output suitable for sponsor review, PM planning, QA preparation, and engineering handoff.
+- Do not mention POC, proof of concept, prototype, informal working history, code generation, repository analysis, source inspection, or how the initial product idea was created unless the user explicitly asks for that framing.
+- Keep the output suitable for sponsor review, PM planning, QA preparation, and engineering handoff for the future application.
+- Use future-state language such as "the target application shall", "the proposed solution should", and "the future implementation will".
+- Avoid language that implies the current codebase is the production solution.
 
 ## Assumptions and Unknowns
 
@@ -48,7 +50,8 @@ When generating documents from a codebase:
 - infer requirements from visible product behavior, UI flows, API behavior, data model, configuration, and business notes
 - separate observed product behavior from inferred future needs
 - translate technical observations into product and delivery language in the final document
-- avoid describing the repository, files, codebase, source inspection, or discovery mechanics in the final document unless the user explicitly asks for an audit or technical appendix
+- treat the source as live requirements: a behavioral reference model used to accelerate product discovery, requirements definition, and implementation planning for the real application that will be built later
+- avoid describing the repository, files, codebase, source inspection, POC, prototype, or discovery mechanics in the final document unless the user explicitly asks for an audit or technical appendix
 
 ## Requirements and Delivery Definition
 
@@ -63,6 +66,28 @@ When generating requirements artifacts:
 - use BDD scenarios for observable behavior and examples where ambiguity is likely
 - document open questions, assumptions, dependencies, and out-of-scope items
 - preserve existing requirement IDs, story IDs, and terminology from the source materials when available
+- convert live requirements into connected artifacts: user story, acceptance criteria, SBE or BDD scenario, API requirement, traceability entry, QA preparation note, and delivery planning input
+
+## Technology Stack and Estimates
+
+Before creating estimates, schedules, implementation plans, API contracts, architecture assumptions, or engineering handoff packages, ask what technology stack will be used for the real implementation when it is not already known.
+
+If the user says any stack is acceptable or does not know yet:
+
+- provide broad ranges rather than precise estimates
+- state that estimates depend on frontend, backend, database, hosting, integration, security, and DevOps choices
+- keep requirements technology-neutral where possible
+- separate technology assumptions from business requirements
+
+## Documentation Package Sequencing
+
+When creating multiple documents, do not generate every possible artifact at once unless the user explicitly asks for a full archive.
+
+- Create a clear document package roadmap.
+- Separate documents that are useful now from documents that should remain templates until a future trigger.
+- Prefer a stakeholder-friendly first package focused on requirements definition, scope alignment, assumptions, risks, and planning.
+- Put future-phase artifacts in a separate folder or section with trigger events such as architecture selection, sprint planning, vendor procurement, formal change control, execution reporting, testing, release readiness, or closeout.
+- Explain briefly why each future document is deferred.
 
 ## Quality Checklist
 
@@ -75,3 +100,6 @@ Before finalizing, check that the output:
 - avoids PMI copyrighted text reproduction
 - is usable by a real project manager without major rework
 - makes requirements traceable and testable when the deliverable concerns requirements or delivery definition
+- avoids POC, prototype, repository, and source-inspection framing unless requested
+- separates current-ready documents from future-phase templates when producing a package
+- asks for or clearly states assumptions about the production technology stack when estimates or implementation planning depend on it

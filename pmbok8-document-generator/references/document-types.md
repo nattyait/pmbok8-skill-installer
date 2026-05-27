@@ -41,6 +41,64 @@ Include:
 - measurement and reporting
 - assumptions, constraints, and open questions
 
+## Scope Statement
+
+Include:
+
+- product scope description
+- project scope description
+- business objectives supported
+- in-scope capabilities
+- out-of-scope capabilities
+- MVP boundaries
+- deliverables
+- acceptance criteria for scope completion
+- assumptions and constraints
+- exclusions
+- dependencies
+- approval section
+
+## Work Breakdown Structure
+
+Include:
+
+- WBS ID
+- work package name
+- description
+- related requirement, feature, epic, or deliverable
+- owner or responsible role
+- estimated complexity or effort range
+- dependencies
+- acceptance or completion criteria
+- notes and assumptions
+
+## Delivery Roadmap
+
+Include:
+
+- delivery phase or increment
+- objective
+- major capabilities
+- key deliverables
+- dependencies
+- decision points
+- risks
+- acceptance or readiness criteria
+- estimated timing or sequencing
+
+## Milestone Schedule
+
+Include:
+
+- milestone
+- milestone description
+- target timeframe
+- entry criteria
+- exit criteria
+- dependent decisions
+- owner
+- key risks or assumptions
+
 ## Stakeholder Register
 
 Include:
@@ -73,6 +131,33 @@ Include:
 - trigger
 - status
 
+## Assumptions and Open Questions Log
+
+Include:
+
+- item ID
+- assumption or question
+- category
+- impact if incorrect or unresolved
+- owner
+- needed-by date or decision point
+- current status
+- resolution notes
+
+## Decision Log
+
+Include:
+
+- decision ID
+- decision summary
+- context
+- options considered
+- decision owner
+- decision date
+- rationale
+- impacted scope, schedule, cost, risk, or stakeholder group
+- follow-up actions
+
 ## Issue Log
 
 Include:
@@ -98,6 +183,19 @@ Include:
 - format or channel
 - escalation path
 - feedback mechanism
+
+## Change Control Plan
+
+Include:
+
+- scope baseline and change control purpose
+- change request intake process
+- impact assessment criteria
+- decision authority
+- approval workflow
+- emergency change handling
+- communication process
+- traceability and versioning rules
 
 ## Change Request
 
@@ -316,3 +414,83 @@ Include:
 - approval status
 - next review date
 - notes or gaps
+
+## Data Requirements and Data Dictionary
+
+Include:
+
+- data entity or object
+- business meaning
+- key attributes
+- data type or format
+- required or optional status
+- validation rules
+- source system
+- owner
+- privacy, retention, or compliance notes
+- related requirements, screens, APIs, reports, or events
+
+## Non-Functional Requirements
+
+Include:
+
+- requirement ID
+- category: performance, security, privacy, reliability, usability, accessibility, scalability, maintainability, supportability, compliance, observability, or recovery
+- requirement statement
+- rationale
+- measurement method
+- acceptance threshold
+- priority
+- owner
+- dependencies or assumptions
+
+## QA Preparation Plan
+
+Include:
+
+- test strategy
+- requirement-to-test traceability approach
+- test levels and types
+- acceptance criteria coverage
+- BDD or SBE scenario coverage
+- test data needs
+- environment needs
+- defect workflow
+- roles and responsibilities
+- entry and exit criteria
+- risks and dependencies
+
+## Engineering Handoff Package
+
+Include:
+
+- product and delivery context
+- scope summary
+- MVP boundaries
+- prioritized requirements
+- user stories and acceptance criteria
+- BDD or SBE scenarios
+- API and integration requirements
+- data requirements
+- non-functional requirements
+- technology stack assumptions
+- dependencies
+- risks
+- open questions
+- implementation planning notes
+
+## Release Readiness Checklist
+
+Include:
+
+- release scope
+- requirements completion status
+- test completion status
+- defect status
+- security and privacy readiness
+- operational readiness
+- support readiness
+- deployment readiness
+- rollback plan status
+- stakeholder approval status
+- go or no-go decision
